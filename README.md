@@ -38,7 +38,7 @@ At this moment you can change the navbar links and the branding.
 Clone the project on local machine
 
 ```bash
-  git clone https://github.com/Blitz-Cloud/[I need to upload it first time]
+  git clone  https://github.com/BlitzStudio/blog-template.git
 ```
 
 Go to the project directory
@@ -88,6 +88,6 @@ I am gonna present the Netlify way because this is my preferred one because come
 local_backend: true
 ```
 
-5. Add a new site on the [Netlify Dashboard](https:app.netlify.com):
+5. Add a new site on the [Netlify Dashboard](https//:app.netlify.com):
    1. Chose you git provider and import the project.
    2. Go on the site settings and Enable Identity and then enable the Git Gateway.Optionally you can enable an external provider like GitHub to login on the admin panel with that.
