@@ -1,3 +1,5 @@
+<img class="img-fluid p-1" src="https://blitzcloud.ml/assets/img/ben.png" />
+
 # <abbr title="Bootstrap 5.2, Eleventy & Netlify CMS">BEN</abbr> is a easier way to share you projects with others.
 
 This is a solution for those of you that needs a place
@@ -23,7 +25,7 @@ WorldPress.
 
 ## Admin Panel
 
-<img style="width:75%; height:auto;" class="img-fluid p-1" src=" /assets/img/adminPanel(Demo).jpg" />
+<img style="width:75%; height:auto;" class="img-fluid p-1" src="https://blitzcloud.ml/assets/img/adminPanel(Demo).jpg" />
 
 In the image above it's an example of a fully configured admin panel where you can create articles, edit the site settings and the Workflow tab that allow you do review the article before you are gonna make it public. [Here](https://cms-demo.netlify.com/) is a demo of the admin panel.
 
@@ -31,13 +33,13 @@ In the image above it's an example of a fully configured admin panel where you c
 
 All the field that appear below can be configure from /src/admin/config.yml.Putting this out of the way some of the options of the fields that doesn't appear below are: lists, map, color and code.<a href="https://www.netlifycms.org/docs/widgets/" >Read more</a>
 
-<img style="width:75%; height:auto;" class="img-fluid p-1 align-self-center" src=" /assets/img/newPost(Demo).jpg" />
+<img style="width:75%; height:auto;" class="img-fluid p-1 align-self-center" src="https://blitzcloud.ml/assets/img/newPost(Demo).jpg" />
 
 ## Customizing
 
 At this moment you can change the navbar links and the branding.
 
-<img style="width:75%; height:auto;" class="img-fluid p-1 align-self-center" src="/assets/img/Customizing(Demo).jpg" />
+<img style="width:75%; height:auto;" class="img-fluid p-1 align-self-center" src="https://blitzcloud.ml/assets/img/Customizing(Demo).jpg" />
 
 ## Run locally
 
