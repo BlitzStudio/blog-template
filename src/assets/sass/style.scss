@@ -1,0 +1,29 @@
+$primary: #1e88e5;
+$secondary: #f2f9ff;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  z-index: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .tech-stack > * {
+    min-width: 50px;
+  }
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

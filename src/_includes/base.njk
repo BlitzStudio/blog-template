@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" sizes="180x180" href="{{ branding.logo }}" />
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+    <script defer src="/assets/js/bootstrap.min.js"></script>
+    <script defer src="/assets/js/index.js"></script>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {% include "navbar.njk" %}
+    {{ content | safe }}
+    {% include "footer.njk" %}
+    <!-- This script is for the Netlify CMS -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

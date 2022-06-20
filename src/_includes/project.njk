@@ -1,0 +1,51 @@
+---
+layout: "base.njk"
+---
+
+<style>
+  main div :not(h1, h2, h3, h4, h5, h6, a) {
+    margin-left: 1rem;
+  }
+  ul {
+    padding: 0px;
+  }
+</style>
+
+<!-- Hero section -->
+<header class="container-fluid my-4">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8">
+      <div class="row">
+        <!-- Article image here  -->
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid" src="{{ image }}" alt="{{ imageAlt }}" />
+        </div>
+        <!-- Short description here, same as for the preview -->
+        <div class="col-12 col-sm-6">
+          <h1 class="fw-bold text-center">{{ title }}</h1>
+          <p class="text-center">
+            <small>
+              {{ date | readableDate }} <span class="text-muted">by </span>
+              {{ author }}
+            </small>
+          </p>
+
+          <p>
+            {{ description }}
+          </p>
+          <div class="tech-stack">
+            {%- for stack in techStack -%}
+            <a class="{{ stack }}"></a>
+            {%- endfor -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<hr class="mx-5 d-sm-none" />
+<!-- Main section -->
+<main class="container m-sm-5 row justify-content-center">
+  <div class="col-12 col-sm-8">{{ content | safe }}</div>
+  <script></script>
+</main>

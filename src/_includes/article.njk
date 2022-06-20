@@ -1,0 +1,41 @@
+---
+layout: "base.njk"
+---
+
+<style>
+  main div :not(h1, h2, h3, h4, h5, h6, a) {
+    margin-left: 1rem;
+  }
+  ul {
+    padding: 0px;
+  }
+</style>
+
+<!-- Hero section -->
+<header class="container-fluid bg-secondary p-3">
+  <div class="row justify-content-center">
+    <div class="col-12 col-sm-8 row">
+      <!-- Article image here  -->
+      <div class="col-12 col-sm-6">
+        <img class="img-fluid" src="{{ image }}" alt="" />
+      </div>
+      <!-- Short description here, same as for the preview -->
+
+      <div class="col-12 col-sm-6 p-1 text-center">
+        <!-- I need to add the date and the author -->
+        <h1 class="fw-bold">{{ title }}</h1>
+        <small>{{ date | readableDate }} by {{ author }}</small>
+        <p>
+          {{ description }}
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<hr class="mx-5 d-sm-none" />
+<!-- Main section -->
+<main class="container m-sm-5 row justify-content-center">
+  <div class="col-12 col-sm-8" id="content">{{ content | safe }}</div>
+
+ 
+</main>

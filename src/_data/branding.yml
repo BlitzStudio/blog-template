@@ -1,0 +1,7 @@
+brand: '<abbr title="Bootstrap 5.2, Eleventy & Netlify CMS ">BEN</abbr> '
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+intro: This blog in build using <abbr title="Bootstrap, Eleventy & Netlify
+  CMS">BEN</abbr>
+logo: /assets/img/icon.png
+logoAlt: Test logo
+links: []

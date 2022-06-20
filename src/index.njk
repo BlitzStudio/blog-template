@@ -1,0 +1,46 @@
+--- 
+  title: Home Page
+  layout: "base.njk"
+---
+
+
+<header class="container-fluid">
+  <div class="row">
+    
+    <div
+      class="col-12 col-md-8 p-4 bg-secondary text-center d-flex flex-column justify-content-center"
+    >
+      <h1 class="text-primary display-1">
+         
+        {{ branding.intro | safe }}
+        
+      </h1>
+      <p class="d-block">
+        
+        {{ branding.description | safe  }}
+         
+      </p>
+    </div>
+    <div
+      class="d-none d-md-flex col-4 p-4 bg-secondary d-flex justify-content-center"
+    >
+      <img
+        class="d-none d-md-block img-fluid circle"
+        src="{{ branding.logo }}"
+        alt="{{ branding.logoAlt }}"
+      />
+    </div>
+  </div>
+</header>
+<!-- Main section -->
+<main>
+  <!-- Section title -->
+  <div class="container d-flex flex-column align-items-center p-2">
+    <h2>Articles</h2>
+    <p>Here are the most recent articles</p>
+  </div>
+  <div class="container">
+    {%- for post in collections.post | limit(3) -%} {% include
+    "articlePreview.njk"%} {%- endfor -%}
+  </div>
+</main>

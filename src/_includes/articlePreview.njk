@@ -1,0 +1,32 @@
+<div class="card mb-3 bg-secondary">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div style="height: 100%" class="card-body d-flex flex-column">
+        <h5 class="card-title">{{ post.data.title }}</h5>
+        <p class="card-text mx-3">
+          <small
+            >{{ post.date | readableDate }} <span class="text-muted">by </span
+            >{{ post.data.author }}</small
+          >
+        </p>
+        <p class="card-text">
+          {{ post.data.description }}
+        </p>
+
+        <a
+          style="width: fit-content"
+          href="{{ post.url }}"
+          class="btn btn-primary text-white mt-auto"
+          >Read more</a
+        >
+      </div>
+    </div>
+    <div class="col-md-4 p-2">
+      <img
+        src="{{ post.data.image }}"
+        class="img-fluid rounded-start"
+        alt="{{ post.data.imageAlt }}"
+      />
+    </div>
+  </div>
+</div>

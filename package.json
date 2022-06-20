@@ -1,0 +1,17 @@
+{
+  "name": "blogv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx eleventy --serve",
+    "build": "eleventy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "bootstrap": "^5.2.0-beta1",
+    "luxon": "^2.4.0"
+  }
+}

@@ -1,0 +1,22 @@
+<div class="card m-3" style="max-width: 16rem; min-height: 470px">
+  <img src="/assets/img/b.jpg" class="card-img-top" alt="..." />
+  <div class="card-body d-flex flex-column text-start">
+    <h5 class="card-title">{{ project.data.title }}</h5>
+    <div class="card-text">
+      <div class="tech-stack text-white">
+        {%- for stack in project.data.techStack -%}
+        <a class="{{ stack }}" target="_blank"></a>
+        {%- endfor -%}
+      </div>
+    </div>
+    <p class="card-text">
+      {{ project.data.description }}
+    </p>
+    <div class="m-auto">
+      <a href="{{ project.url }}" class="btn btn-primary">Read more</a>
+      <a href="{{ project.data.githubUrl }}" class="btn btn-github bg-github"
+        >GitHub</a
+      >
+    </div>
+  </div>
+</div>

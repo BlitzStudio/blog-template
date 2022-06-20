@@ -1,0 +1,18 @@
+<footer
+  class="navbar-nav bg-primary p-3 d-flex flex-row justify-content-between align-content-center text-white"
+>
+  <div class="   text-white">
+    <!-- Here it comes the logo  -->
+    <a href="/" class="nav-link mx-3">{{ branding.brand | safe }}</a>
+  </div>
+  <div>
+    {% if branding.links %}
+    <div class="navbar-nav flex-row">
+      {% for link in branding.links %}
+      <a class="nav-link mx-3" href="{{ link.url }}">
+        {{ link.title }}
+      </a>
+      {% endfor %}
+    {% endif %}
+  </div>
+</footer>

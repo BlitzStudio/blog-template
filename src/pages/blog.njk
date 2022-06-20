@@ -1,0 +1,16 @@
+---
+title: Blog
+---
+
+<!-- Hero section -->
+<header
+  class="container-fluid d-flex flex-column justify-content-center text-center bg-secondary h-25 mb-2"
+>
+  <h1>Welcome to the blog</h1>
+  <p>Tips and tricks</p>
+</header>
+<!-- Articles section -->
+<main class="container">
+  {%- for post in collections.post | reverse -%} {% include
+  "articlePreview.njk"%} {%- endfor -%}
+</main>
