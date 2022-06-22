@@ -1,6 +1,7 @@
-$primary: #1e88e5;
-$secondary: #f2f9ff;
+// $primary: #1e88e5;
 
+@import "../../_data/colors.yml";
+$secondary: #f2f9ff;
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,

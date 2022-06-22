@@ -13,5 +13,10 @@
     "@11ty/eleventy": "^1.0.1",
     "bootstrap": "^5.2.0-beta1",
     "luxon": "^2.4.0"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0"
   }
 }
