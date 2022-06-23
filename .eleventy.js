@@ -1,5 +1,9 @@
-const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
+const { readFile, createCss } = require("./utils");
+const path = require("path");
+const colors = readFile(path.join(__dirname, "./src/_data/colors.json"), true);
+
+const yaml = require("js-yaml");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addWatchTarget("./src/assets");
@@ -29,10 +33,16 @@ module.exports = function (eleventyConfig) {
     return arr.slice(0, limit);
   });
 
+  // This plugin minify html,json,xml,xsl and webmanifest
+
+  eleventyConfig.addPlugin(require("@sherby/eleventy-plugin-files-minifier"));
+
+  createCss(colors, colors.modified);
+
   return {
     dir: {
       input: "src",
-      output: "public",
+      output: "site",
     },
   };
 };
