@@ -83,5 +83,17 @@ collections:
               widget: "boolean",
               default: true,
             }
-          - { label: "Primary", name: "primary", widget: "color" }
-          - { label: "secondary", name: "secondary", widget: "color" }
+          - {
+              label: "Primary",
+              name: "primary",
+              widget: "color",
+              enableAlpha: true,
+              allowInput: true,
+            }
+          - {
+              label: "secondary",
+              name: "secondary",
+              widget: "color",
+              enableAlpha: true,
+              allowInput: true,
+            }
